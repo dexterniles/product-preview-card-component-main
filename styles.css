@@ -1,0 +1,154 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Fraunces";
+    src: url(fonts/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2eae2;
+    height: 100dvh;
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 600px;
+    height: 456px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+}
+
+.image-shown {
+    width: 300px;
+    height: 456px;
+    vertical-align: middle;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+#product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 32px;
+    height: 100%;
+    width: 300px;
+}
+
+.product-type {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 5px;
+    color: #6C7289;
+    line-height: 120%;
+    margin-bottom: 12px;
+}
+
+.product-name {
+    font-family: "Fraunces";
+    font-size: 32px;
+    font-weight: 700;
+    color: #1C232B; 
+    margin-bottom: 12px;
+}
+
+.product-description {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 200%;
+    color: #6C7289;
+    margin-bottom: 24px;
+}
+
+.span-wrapper {
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.msrp {
+    text-decoration: line-through;
+    color: #6C7289;
+}
+
+.sale-price {
+    font-family: "Fraunces";
+    font-weight: 700;
+    font-size: 32px;
+    color: #3D8168;
+}
+
+.add-to-cart {
+    height: 50px;
+    width: 236px;
+    padding: 16px 32px 16px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: white;
+    font-family: "Montserrat";
+    font-size: 14px;
+    background-color: #1a4032;
+    border-radius: 8px;
+    border-style: none;
+}
+
+.attribution {
+    font-size: 11px; 
+    text-align: center; 
+    bottom: 0%;
+    position: fixed;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 674px) {
+    .container {
+        height: 750px;
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image-shown {
+        height: 342px;
+        width: 350px;
+        place-items: center;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 0px;
+    }
+
+    #product-info {
+        width: 350px;
+        height: 400px;
+        padding: 32px;
+        display: flex;
+        align-items: center;
+    }
+
+    .product-description {
+        margin-bottom: 16px;
+    }
+
+    .span-wrapper {
+        margin-bottom: 16px;
+    }
+}
