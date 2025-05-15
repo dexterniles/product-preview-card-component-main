@@ -17,6 +17,7 @@
 body {
     background-color: #f2eae2;
     height: 100dvh;
+    width: auto;
     display: grid;
     place-items: center;
 }
@@ -125,7 +126,7 @@ body {
         width: 350px;
         display: flex;
         flex-direction: column;
-        margin: 16px;
+        margin: 24px;
     }
 
     .image-shown {
