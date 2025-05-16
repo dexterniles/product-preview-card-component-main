@@ -114,7 +114,7 @@ picture > img {
 
 .attribution {
     bottom: 0%;
-    position: static;
+    position: fixed;
     font-size: 12px;
     font-family: "Fraunces";
 }
